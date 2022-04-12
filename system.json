@@ -1,0 +1,23 @@
+{
+    "name": "jdrjr",
+    "title": "JDR Junior",
+    "description": "The JDR Junior system for FoundryVTT !",
+    "version": "0.0.1",
+    "minimumCoreVersion": "0.9",
+    "compatibleCoreVersion": "0.9",
+    "templateVersion": 2,
+    "author": "Vharung",
+    "esmodules": ["module/jdrjr.js"],
+    "styles": ["css/jdrjr.css"],
+    "scripts": [],
+    "packs": [],
+    "languages": [],
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "PV",
+    "secondaryTokenAttribute": "PM",
+    "url": "",
+    "manifest": "",
+    "download": "https://github.com/Vharung/JDR-jr",
+    "license": "LICENSE.txt"
+}

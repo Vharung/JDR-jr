@@ -1,0 +1,70 @@
+{
+    "Actor": {
+        "types":[
+            "personnage",
+            "pnj",
+            "monstre"
+        ],
+        "templates":{
+            "stat":{
+                "PV": {
+                  "value":10,
+                  "max":10
+                },
+                "PM": {
+                  "value":10,
+                  "max":10
+                },
+                "PE":0,
+                "PA":0,
+                "PP":0
+            },            
+            "attributs":{
+                "agilite":0,
+                "charisme":0,
+                "corps":0,
+                "esprit":0
+            },
+            "background":{
+                "histoire":"",
+                "race":"",
+                "ordre":"",
+                "profil":"",
+                "personnalite":"",
+                "age":10
+            }
+        }
+    },
+    "Item": {
+        "types": [
+            "arme",
+            "objet",
+            "magie",
+            "talent",
+            "faiblesse"
+        ],
+        "arme": {
+            "description": "",
+            "degats":"",
+            "portee":5,
+            "valeur":10,
+            "quantite":1
+        },
+        "objet": {
+            "description": "",
+            "poids":1,
+            "valeur":10,
+            "quantite":1
+        },
+        "magie": {
+            "classe":"",
+            "description": ""
+        },
+        "talent": {
+            "description": ""
+        },
+        "faiblesse": {
+            "description": ""
+        }
+    }
+}
