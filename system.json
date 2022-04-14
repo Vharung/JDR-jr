@@ -10,7 +10,40 @@
     "esmodules": ["module/jdrjr.js"],
     "styles": ["css/jdrjr.css"],
     "scripts": [],
-    "packs": [],
+    "packs": [
+        {
+          "name": "faiblesse",
+          "label": "Faiblesse",
+          "system": "jdrjr",
+          "path": "./pack/faiblesse.db",
+          "entity": "Item",
+          "type": "Item"
+        },
+        {
+          "name": "magie",
+          "label": "Magie",
+          "system": "jdrjr",
+          "path": "./pack/magie.db",
+          "entity": "Item",
+          "type": "Item"
+        },
+        {
+          "name": "objet",
+          "label": "Objet",
+          "system": "jdrjr",
+          "path": "./pack/objet.db",
+          "entity": "Item",
+          "type": "Item"
+        },
+        {
+          "name": "talent",
+          "label": "Talent",
+          "system": "jdrjr",
+          "path": "./pack/talent.db",
+          "entity": "Item",
+          "type": "Item"
+        }
+    ],
     "languages": [],
     "gridDistance": 1,
     "gridUnits": "m",
