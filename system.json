@@ -42,6 +42,14 @@
           "path": "./pack/talent.db",
           "entity": "Item",
           "type": "Item"
+        },
+        {
+          "label": "Régles",
+          "type": "JournalEntry",
+          "name": "regles",
+          "path": "./pack/regles.db",
+          "system": "jdrjr",
+          "entity": "JournalEntry"
         }
     ],
     "languages": [],
