@@ -1,12 +1,20 @@
 {
-    "name": "jdrjr",
+    "id": "jdrjr",
     "title": "JDR Junior",
     "description": "The JDR Junior system for FoundryVTT !",
-    "version": "0.0.1",
-    "minimumCoreVersion": "0.9",
-    "compatibleCoreVersion": "0.9",
+    "version": "0.0.2",
+    "compatibility": {
+      "minimum": "10",
+      "verified": "10.283",
+      "maximum": "10"
+    },
     "templateVersion": 2,
-    "author": "Vharung",
+    "authors": [
+      {
+        "name": "Vharung",
+        "url": "https://foundryvtt.com"
+      }
+    ],
     "esmodules": ["module/jdrjr.js"],
     "styles": ["css/jdrjr.css"],
     "scripts": [],
@@ -16,7 +24,6 @@
           "label": "Faiblesse",
           "system": "jdrjr",
           "path": "./pack/faiblesse.db",
-          "entity": "Item",
           "type": "Item"
         },
         {
@@ -24,7 +31,6 @@
           "label": "Magie",
           "system": "jdrjr",
           "path": "./pack/magie.db",
-          "entity": "Item",
           "type": "Item"
         },
         {
@@ -32,7 +38,6 @@
           "label": "Objet",
           "system": "jdrjr",
           "path": "./pack/objet.db",
-          "entity": "Item",
           "type": "Item"
         },
         {
@@ -40,7 +45,6 @@
           "label": "Talent",
           "system": "jdrjr",
           "path": "./pack/talent.db",
-          "entity": "Item",
           "type": "Item"
         },
         {
@@ -48,9 +52,8 @@
           "type": "JournalEntry",
           "name": "regles",
           "path": "./pack/regles.db",
-          "system": "jdrjr",
-          "entity": "JournalEntry"
-        }
+          "system": "jdrjr"
+       }
     ],
     "languages": [],
     "gridDistance": 1,

@@ -1,8 +1,8 @@
 export class jdrjrItemSheet extends ItemSheet{
     get template(){
-        console.log(`jdrjr | Récupération du fichier html ${this.item.data.type}-sheet.`);
+        console.log(`jdrjr | Récupération du fichier html ${this.item.type}-sheet.`);
 
-        return `systems/jdrjr/templates/sheets/${this.item.data.type}-sheet.html`;
+        return `systems/jdrjr/templates/sheets/${this.item.type}-sheet.html`;
     }
 
     getData(){

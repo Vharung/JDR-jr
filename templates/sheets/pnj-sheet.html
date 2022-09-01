@@ -8,38 +8,38 @@
 			</div>
 			<div class="grid-3col">
 				<h2>Race</h2>
-				<input name="data.race" type="text" value="{{data.data.race}}" placeholder="Race"/>
+				<input name="system.race" type="text" value="{{data.system.race}}" placeholder="Race"/>
 				<h2>Profil</h2>
-				<input name="data.profil" type="text" value="{{data.data.profil}}" placeholder="Profil"/>
+				<input name="system.profil" type="text" value="{{data.system.profil}}" placeholder="Profil"/>
 			</div>
 			<div class="grid-3col">
 				
 				<h2>Ordre / Clan</h2>
-				<input name="data.ordre" type="text" value="{{data.data.ordre}}" placeholder="Profil"/>
+				<input name="system.ordre" type="text" value="{{data.system.ordre}}" placeholder="Profil"/>
 
 				<h2>Personalité</h2>
-				<input name="data.personnalite" type="text" value="{{data.data.personnalite}}" placeholder="Personnalite"/>				
+				<input name="system.personnalite" type="text" value="{{data.system.personnalite}}" placeholder="Personnalite"/>				
 			</div>
 		</div>
 
 		<div class="separator"></div>
 		<div class="flexrow">
 			<div class="grid-5col" style="min-width: 150px;">
-				PV <input class="hp" name="data.PV.value" type="text" value="{{data.data.PV.value}}" placeholder="1" style="width: 40px;"/> /
-				<input class="hpmax" name="data.PV.max" type="text" value="{{data.data.PV.max}}" placeholder="1" style="width: 40px;"/>
+				PV <input class="hp" name="system.PV.value" type="text" value="{{data.system.PV.value}}" placeholder="1" style="width: 40px;"/> /
+				<input class="hpmax" name="system.PV.max" type="text" value="{{data.system.PV.max}}" placeholder="1" style="width: 40px;"/>
 			</div> 
 			<div class="grid-5col" style="min-width: 150px;">
-				PM <input class="psy" name="data.PM.value" type="text" value="{{data.data.PM.value}}" placeholder="0" style="width: 40px;"/> /
-				<input class="psymax" name="data.PM.max" type="text" value="{{data.data.PM.max}}" placeholder="0" style="width: 40px;"/>
+				PM <input class="psy" name="system.PM.value" type="text" value="{{data.system.PM.value}}" placeholder="0" style="width: 40px;"/> /
+				<input class="psymax" name="system.PM.max" type="text" value="{{data.system.PM.max}}" placeholder="0" style="width: 40px;"/>
 			</div>			
 			<div class="grid-5col" style="min-width: 150px;">
-				Poin d'eclat <input class="armureperso" name="data.PE" type="text" value="{{data.data.PE}}" placeholder="0" style="width: 40px;"/> 
+				Poin d'eclat <input class="armureperso" name="system.PE" type="text" value="{{data.system.PE}}" placeholder="0" style="width: 40px;"/> 
 			</div>
 			<div class="grid-5col" style="min-width: 150px;">
-				Poin de protection <input name="data.PA" type="text" value="{{data.data.PA}}" placeholder="0" style="width: 40px;"/> 
+				Poin de protection <input name="system.PA" type="text" value="{{data.system.PA}}" placeholder="0" style="width: 40px;"/> 
 			</div>
 			<div class="grid-5col" style="min-width: 150px;">
-				Pion de poison <input class="encours" name="data.PP" type="text" value="{{data.data.PP}}" placeholder="0" style="width: 40px;"/>
+				Pion de poison <input class="encours" name="system.PP" type="text" value="{{data.system.PP}}" placeholder="0" style="width: 40px;"/>
 			</div>
 		</div>
 	</header>
@@ -58,9 +58,9 @@
 		{{!-- Biography Tab --}}
 	    <div id="description" class="tab description" data-group="primary" data-tab="description">
 	    	<h2>Histoire</h2>
-				<textarea class="histoire" name="data.histoire">{{data.data.histoire}}</textarea>
+				<textarea class="histoire" name="system.histoire">{{data.system.histoire}}</textarea>
 			<h2>Age</h2>
-				<input name="data.age" type="text" value="{{data.data.age}}" placeholder="10"/>
+				<input name="system.age" type="text" value="{{data.system.age}}" placeholder="10"/>
 		</div>
 
 		{{!-- Carac Tab --}}
@@ -68,20 +68,20 @@
 			<h2>Attributs</h2>
 			<div class="flexrow">
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="agilite" data-dice="1d" data-posture="{{data.data.agilite}}" data-attDice="{{data.data.agilite}}">Agilite</label></p>
-					<input class="agil" name="data.agilite" type="text" value="{{data.data.agilite}}" placeholder="{{data.data.agilite}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="agilite" data-dice="1d" data-posture="{{data.system.agilite}}" data-attDice="{{data.system.agilite}}">Agilite</label></p>
+					<input class="agil" name="system.agilite" type="text" value="{{data.system.agilite}}" placeholder="{{data.system.agilite}}" style="text-align: center"/>
 				</div>
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="charisme" data-dice="1d" data-posture="{{data.data.charisme}}" data-attDice="{{data.data.charisme}}">Charisme</label></p>
-					<input class="char" name="data.charisme" type="text" value="{{data.data.charisme}}" placeholder="{{data.data.charisme}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="charisme" data-dice="1d" data-posture="{{data.system.charisme}}" data-attDice="{{data.system.charisme}}">Charisme</label></p>
+					<input class="char" name="system.charisme" type="text" value="{{data.system.charisme}}" placeholder="{{data.system.charisme}}" style="text-align: center"/>
 				</div>
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="corps" data-dice="1d" data-posture="{{data.data.corps}}" data-attDice="{{data.data.corps}}">Corps</label></p>
-					<input class="corp" name="data.corps" type="text" value="{{data.data.corps}}" placeholder="{{data.data.corps}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="corps" data-dice="1d" data-posture="{{data.system.corps}}" data-attDice="{{data.system.corps}}">Corps</label></p>
+					<input class="corp" name="system.corps" type="text" value="{{data.system.corps}}" placeholder="{{data.system.corps}}" style="text-align: center"/>
 				</div>
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="esprit" data-dice="1d" data-posture="{{data.data.esprit}}" data-attDice="{{data.data.esprit}}">Esprit</label></p>
-					<input class="espr" name="data.esprit" type="text" value="{{data.data.esprit}}" placeholder="{{data.data.esprit}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="esprit" data-dice="1d" data-posture="{{data.system.esprit}}" data-attDice="{{data.system.esprit}}">Esprit</label></p>
+					<input class="espr" name="system.esprit" type="text" value="{{data.system.esprit}}" placeholder="{{data.system.esprit}}" style="text-align: center"/>
 				</div>
 			</div>
 		</div>
@@ -103,7 +103,7 @@
 	                <li class="item flexrow" data-item-id="{{item._id}}">
 	                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
 	                    <h4 class="item-name">{{item.name}}</h4>
-	                    <h4 class="item-description" title="{{item.data.description}}">{{item.data.description}}</h4>
+	                    <h4 class="item-description" title="{{item.system.description}}">{{item.system.description}}</h4>
 	                    <div class="item-controls">
 	                    	
 	                        <a class="item-control item-edit" title="Edit Sort"><i class="fas fa-edit"></i></a>
@@ -128,7 +128,7 @@
 	                <li class="item flexrow" data-item-id="{{item._id}}">
 	                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
 	                    <h4 class="item-name">{{item.name}}</h4>
-	                    <h4 class="item-description" title="{{item.data.description}}">{{item.data.description}}</h4>
+	                    <h4 class="item-description" title="{{item.system.description}}">{{item.system.description}}</h4>
 	                    <div class="item-controls">
 	                    	
 	                        <a class="item-control item-edit" title="Edit Sort"><i class="fas fa-edit"></i></a>
@@ -159,8 +159,8 @@
 	                <li class="item flexrow" data-item-id="{{item._id}}">
 	                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
 	                    <h4 class="item-name">{{item.name}}</h4>
-	                    <div class="item-classe">{{item.data.classe}}</div>
-	                    <h4 class="item-description" title="{{item.data.description}}">{{item.data.description}}</h4>
+	                    <div class="item-classe">{{item.system.classe}}</div>
+	                    <h4 class="item-description" title="{{item.system.description}}">{{item.system.description}}</h4>
 	                    <div class="item-controls">
 	                    	
 	                        <a class="item-control item-edit" title="Edit Sort"><i class="fas fa-edit"></i></a>
@@ -191,10 +191,10 @@
 	                <li class="item flexrow" data-item-id="{{item._id}}">
 	                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
 	                    <h4 class="item-name" title="{{item.name}}">{{item.name}}</h4>
-	                    <h4 class="item-description" title="{{item.data.description}}">{{item.data.description}}</h4>
-	                    <h4 class="item-dommage">{{item.data.degats}}</h4>
-	                    <h4 class="item-valeur">{{item.data.valeur}}</h4>
-	                    <h4 class="item-qty">{{item.data.quantite}}</h4>
+	                    <h4 class="item-description" title="{{item.system.description}}">{{item.system.description}}</h4>
+	                    <h4 class="item-dommage">{{item.system.degats}}</h4>
+	                    <h4 class="item-valeur">{{item.system.valeur}}</h4>
+	                    <h4 class="item-qty">{{item.system.quantite}}</h4>
 	                    <div class="item-controls">
 	                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
 	                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
@@ -220,10 +220,10 @@
 	                <li class="item flexrow" data-item-id="{{item._id}}">
 	                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
 	                    <h4 class="item-name" title="{{item.name}}">{{item.name}}</h4>
-	                    <h4 class="item-description" title="{{item.data.description}}">{{item.data.description}}</h4>
-	                    <h4 class="item-dommage">{{item.data.degats}}</h4>
-	                    <h4 class="item-valeur">{{item.data.valeur}}</h4>
-	                    <h4 class="item-qty">{{item.data.quantite}}</h4>
+	                    <h4 class="item-description" title="{{item.system.description}}">{{item.system.description}}</h4>
+	                    <h4 class="item-dommage">{{item.system.degats}}</h4>
+	                    <h4 class="item-valeur">{{item.system.valeur}}</h4>
+	                    <h4 class="item-qty">{{item.system.quantite}}</h4>
 	                    <div class="item-controls">
 	                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
 	                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
