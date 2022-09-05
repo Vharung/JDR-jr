@@ -1,4 +1,8 @@
-export class jdrjrItemSheet extends ItemSheet{
+/**
+ * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
+ * @extends {Item}
+ */
+ export class jdrjrItemSheet extends ItemSheet{
     get template(){
         console.log(`jdrjr | Récupération du fichier html ${this.item.type}-sheet.`);
 
