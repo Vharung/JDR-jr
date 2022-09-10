@@ -2,10 +2,10 @@
     "id": "jdrjr",
     "title": "JDR Junior",
     "description": "The JDR Junior system for FoundryVTT !",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "compatibility": {
       "minimum": "10",
-      "verified": "10.283",
+      "verified": "10.285",
       "maximum": "10"
     },
     "templateVersion": 2,
