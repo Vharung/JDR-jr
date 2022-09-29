@@ -8,38 +8,38 @@
 			</div>
 			<div class="grid-3col">
 				<h2>Race</h2>
-				<input name="system.race" type="text" value="{{data.system.race}}" placeholder="Race"/>
+				<input name="system.race" type="text" value="{{actor.system.race}}" placeholder="Race"/>
 				<h2>Profil</h2>
-				<input name="system.profil" type="text" value="{{data.system.profil}}" placeholder="Profil"/>
+				<input name="system.profil" type="text" value="{{actor.system.profil}}" placeholder="Profil"/>
 			</div>
 			<div class="grid-3col">
 				
 				<h2>Ordre / Clan</h2>
-				<input name="system.ordre" type="text" value="{{data.system.ordre}}" placeholder="Profil"/>
+				<input name="system.ordre" type="text" value="{{actor.system.ordre}}" placeholder="Profil"/>
 
 				<h2>Personalité</h2>
-				<input name="system.personnalite" type="text" value="{{data.system.personnalite}}" placeholder="Personnalite"/>				
+				<input name="system.personnalite" type="text" value="{{actor.system.personnalite}}" placeholder="Personnalite"/>				
 			</div>
 		</div>
 
 		<div class="separator"></div>
 		<div class="flexrow">
 			<div class="grid-5col" style="min-width: 150px;">
-				PV <input class="hp" name="system.PV.value" type="text" value="{{data.system.PV.value}}" placeholder="1" style="width: 40px;"/> /
-				<input class="hpmax" name="system.PV.max" type="text" value="{{data.system.PV.max}}" placeholder="1" style="width: 40px;"/>
+				PV <input class="hp" name="system.PV.value" type="text" value="{{actor.system.PV.value}}" placeholder="1" style="width: 40px;"/> /
+				<input class="hpmax" name="system.PV.max" type="text" value="{{actor.system.PV.max}}" placeholder="1" style="width: 40px;"/>
 			</div> 
 			<div class="grid-5col" style="min-width: 150px;">
-				PM <input class="psy" name="system.PM.value" type="text" value="{{data.system.PM.value}}" placeholder="0" style="width: 40px;"/> /
-				<input class="psymax" name="system.PM.max" type="text" value="{{data.system.PM.max}}" placeholder="0" style="width: 40px;"/>
+				PM <input class="psy" name="system.PM.value" type="text" value="{{actor.system.PM.value}}" placeholder="0" style="width: 40px;"/> /
+				<input class="psymax" name="system.PM.max" type="text" value="{{actor.system.PM.max}}" placeholder="0" style="width: 40px;"/>
 			</div>			
 			<div class="grid-5col" style="min-width: 150px;">
-				Poin d'eclat <input class="armureperso" name="system.PE" type="text" value="{{data.system.PE}}" placeholder="0" style="width: 40px;"/> 
+				Poin d'eclat <input class="armureperso" name="system.PE" type="text" value="{{actor.system.PE}}" placeholder="0" style="width: 40px;"/> 
 			</div>
 			<div class="grid-5col" style="min-width: 150px;">
-				Poin de protection <input name="system.PA" type="text" value="{{data.system.PA}}" placeholder="0" style="width: 40px;"/> 
+				Poin de protection <input name="system.PA" type="text" value="{{actor.system.PA}}" placeholder="0" style="width: 40px;"/> 
 			</div>
 			<div class="grid-5col" style="min-width: 150px;">
-				Pion de poison <input class="encours" name="system.PP" type="text" value="{{data.system.PP}}" placeholder="0" style="width: 40px;" readonly=""/>
+				Pion de poison <input class="encours" name="system.PP" type="text" value="{{actor.system.PP}}" placeholder="0" style="width: 40px;" readonly=""/>
 			</div>
 		</div>
 	</header>
@@ -58,9 +58,9 @@
 		{{!-- Biography Tab --}}
 	    <div id="description" class="tab description" data-group="primary" data-tab="description">
 	    	<h2>Histoire</h2>
-				<textarea class="histoire" name="system.histoire">{{data.system.histoire}}</textarea>
+				<textarea class="histoire" name="system.histoire">{{actor.system.histoire}}</textarea>
 			<h2>Age</h2>
-				<input name="system.age" type="text" value="{{data.system.age}}" placeholder="10"/>
+				<input name="system.age" type="text" value="{{actor.system.age}}" placeholder="10"/>
 		</div>
 
 		{{!-- Carac Tab --}}
@@ -68,20 +68,20 @@
 			<h2>Attributs</h2>
 			<div class="flexrow">
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="agilite" data-dice="1d" data-posture="{{data.system.agilite}}" data-attDice="{{data.system.agilite}}">Agilite</label></p>
-					<input class="agil" name="system.agilite" type="text" value="{{data.system.agilite}}" placeholder="{{data.system.agilite}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="agilite" data-dice="1d" data-posture="{{actor.system.agilite}}" data-attDice="{{actor.system.agilite}}">Agilite</label></p>
+					<input class="agil" name="system.agilite" type="text" value="{{actor.system.agilite}}" placeholder="{{actor.system.agilite}}" style="text-align: center"/>
 				</div>
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="charisme" data-dice="1d" data-posture="{{data.system.charisme}}" data-attDice="{{data.system.charisme}}">Charisme</label></p>
-					<input class="char" name="system.charisme" type="text" value="{{data.system.charisme}}" placeholder="{{data.system.charisme}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="charisme" data-dice="1d" data-posture="{{actor.system.charisme}}" data-attDice="{{actor.system.charisme}}">Charisme</label></p>
+					<input class="char" name="system.charisme" type="text" value="{{actor.system.charisme}}" placeholder="{{actor.system.charisme}}" style="text-align: center"/>
 				</div>
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="corps" data-dice="1d" data-posture="{{data.system.corps}}" data-attDice="{{data.system.corps}}">Corps</label></p>
-					<input class="corp" name="system.corps" type="text" value="{{data.system.corps}}" placeholder="{{data.system.corps}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="corps" data-dice="1d" data-posture="{{actor.system.corps}}" data-attDice="{{actor.system.corps}}">Corps</label></p>
+					<input class="corp" name="system.corps" type="text" value="{{actor.system.corps}}" placeholder="{{actor.system.corps}}" style="text-align: center"/>
 				</div>
 				<div class="grid-4col">
-					<p style="text-align: center"><label class="jetdedes" data-name="esprit" data-dice="1d" data-posture="{{data.system.esprit}}" data-attDice="{{data.system.esprit}}">Esprit</label></p>
-					<input class="espr" name="system.esprit" type="text" value="{{data.system.esprit}}" placeholder="{{data.system.esprit}}" style="text-align: center"/>
+					<p style="text-align: center"><label class="jetdedes" data-name="esprit" data-dice="1d" data-posture="{{actor.system.esprit}}" data-attDice="{{actor.system.esprit}}">Esprit</label></p>
+					<input class="espr" name="system.esprit" type="text" value="{{actor.system.esprit}}" placeholder="{{actor.system.esprit}}" style="text-align: center"/>
 				</div>
 			</div>
 		</div>
