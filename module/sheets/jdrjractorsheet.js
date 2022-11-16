@@ -6,8 +6,7 @@
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
           classes: ["jdrjr", "sheet", "actor"],
-          //template: "systems/jdrjr/templates/actor/personnage-sheet.html",
-          width: 1000,
+          width: 1000, //defini la auteur et la largeurs de la fiche de perso
           height: 800,
           tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
         });
@@ -20,10 +19,9 @@
 
     getData(){
         const data = super.getData();
-        var poidsactor='';
         data.dtypes = ["String", "Number", "Boolean"];
         console.log(data);        
-		if (this.actor.type == 'personnage' || this.actor.type == 'pnj' || this.actor.type == 'monstre') {
+		if (this.actor.type == 'personnage' || this.actor.type == 'pnj' || this.actor.type == 'monstre') { //les différents types d'actor
 			this._prepareCharacterItems(data);
 		}
         console.log(data);
@@ -33,15 +31,14 @@
 	_prepareCharacterItems(sheetData) {
         const actorData = sheetData.actor;
 
-        // Initialize containers.
+        // Initialize containers. Liste des différents items
         const inventaire = [];
         const sort = [];
         const arme = [];
         const faiblesse = [];
         const talent = [];
         
-        // Iterate through items, allocating to containers
-        // let totalWeight = 0;
+        // Iterate through items, allocating to containers. Tri des différents items
         for (let i of sheetData.items) {
           let item = i.items;
           i.img = i.img || DEFAULT_TOKEN;
@@ -62,7 +59,7 @@
           }
         }
 
-        // Assign and return
+        // Assign and return, assination des items
         actorData.inventaire = inventaire;
         actorData.sort = sort;
         actorData.arme = arme;
@@ -85,45 +82,7 @@
         });
 
         //Jet de des
-        html.find('.jetdedes').click(this._onRoll.bind(this)); 
-
-        //monstre level up
-        $('.levelup').on('click',function(){
-            var lvl=html.find('.lvl').val();
-            var pv=html.find('.hpmax').val();
-            var ps=html.find('.psymax').val();
-            pv=parseInt(pv)+3;
-            ps=parseInt(ps)+3;
-
-            html.find('.hpmax').val(pv);
-            html.find('.psymax').val(ps);
-            var bonus=0;
-            if(lvl<=3){
-                bonus=1;
-            }else {
-                bonus=0;
-            }
-            var ar=html.find('.protection').val();
-            if(ar==undefined||ar==""){
-                ar=0;
-            }
-            ar=parseInt(ar)+(parseInt(bonus));
-            
-            html.find('.protection').val(ar);
-
-            var degat=html.find('.degat').val();
-            var fixe = degat.split('+');
-            var number=fixe[1];
-            if(number==undefined||number==""){
-                number=0;
-            }
-            if(lvl<=5){
-                number=parseInt(number)+1;
-            }
-            html.find('.degat').val(fixe[0]+'+'+number);
-            lvl++;
-            html.find('.lvl').val(lvl);
-        });
+        html.find('.jetdedes').click(this._onRoll.bind(this));
 
     }
 
@@ -143,7 +102,7 @@
         let monJetDeDes = event.target.dataset["dice"];
         let nbdes = event.target.dataset["attdice"];
         const name = event.target.dataset["name"];
-        const jetdeDesFormule = nbdes+"d6";
+        const jetdeDesFormule = nbdes+"d6"; //formule du lancer
 
         let r = new Roll(nbdes+"d6");
         var roll=r.evaluate({"async": false});

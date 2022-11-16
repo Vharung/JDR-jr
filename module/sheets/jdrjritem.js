@@ -6,7 +6,7 @@
   static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
           classes: ["jdrjr", "sheet", "item"],
-          width: 600,
+          width: 600, //tailles des fiches items
           height: 400,
         });
     }
