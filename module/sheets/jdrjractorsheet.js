@@ -106,10 +106,15 @@
 
         let r = new Roll(nbdes+"d6");
         var roll=r.evaluate({"async": false});
-        let retour=r.result; 
-        var succes="";
+        var table=r.terms[0].results
+        var z=0;
+        for (var i = table.length - 1; i >= 0; i--) {
+            if(table[i].result>z){
+                z=table[i].result;
+            }
+        } 
 
-        const texte = "Jet de " + name + " : " +jetdeDesFormule ;//+" - "+succes+" réussite(s)";
+        const texte = '<img src="'+img+'"  width="24" height="24"/><span style="left: 5px;top: -7px;position: relative;font-size: 1.2em;">Jet de ' + name + ' : <span style="color: #fff;background: #23221d;padding: 5px;">' +total+'</span></span>' ;//+" - "+succes+" réussite(s)";
         roll.toMessage({
             speaker: ChatMessage.getSpeaker({ actor: this.actor }),
             flavor: texte
