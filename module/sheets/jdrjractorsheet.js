@@ -6,15 +6,15 @@
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
           classes: ["jdrjr", "sheet", "actor"],
-          width: 1000, //defini la auteur et la largeurs de la fiche de perso
-          height: 800,
+          width: 1030, //defini la auteur et la largeurs de la fiche de perso
+          height: 750,
           tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
         });
     }
 
     get template() {
         console.log(`jdrjr | Récupération du fichier html ${this.actor.type}-sheet.`);
-        return `systems/jdrjr/templates/sheets/${this.actor.type}-sheet.html`;
+        return `systems/jdrjr/templates/sheets/personnage-sheet.html`;
     }
 
     getData(){
