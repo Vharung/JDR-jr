@@ -6,24 +6,24 @@
 .tableaucreation{text-align: center;display: inline-block;margin-top: 10px;width: 120px; height: 50px;}
 .separator{width: 100%;background:#782e22;height: 1px;margin-top: 10px; margin-bottom: 10px}
 h1,h2{font-family: 'MedievalSharp', cursive;}
-
+.jr .clear{clear:both;}
 
 /* Styles limited to liber sheets */
 .jr input{border: none;background: none;text-align: center;}
 .jr .grid-2col{width: 500px; height: 700px;float: left;flex:none;display: block;}
 .jr .grid-4col{width: 120px;height: 194px;float: left;padding: 5px;}
 .jr .avatar{width: 500px; height: 500px;}
-.jr h1 {background: #ecf8f4;color: #c15f6c;position: relative;display:block;margin:5px;font-size: 1.2em;}
-.jr h1 input{height: 30px;padding:10px 0 10px 0;}
+.jr h1 {background: #ecf8f4;position: relative;display:block;margin:5px;font-size: 1.2em;border: none;}
+.jr .col0 h1 input{height: 30px;padding:10px 0 10px 0;border: none;color:#c15f6c;}
 .jr h2{color:#ecf8f4;font-size: 1.1em;border: none;}
 .jr h3{color:#ecf8f4;font-size: 1.1em;border: none;text-transform: uppercase;}
 .jr p{color:#ecf8f4}
 .jr input::placeholder {opacity: 0.5;color: #ecf8f4;}
 .jr .col{border-left: #ecf8f4 solid 1px}
-.jr .col input{width: 20px; display: inline-block;color:#ecf8f4;}
+.jr .col input{width: 23px; display: inline-block;color:#ecf8f4;}
+.jr .col0 input{color:#ecf8f4;}
 .jr .items-list{margin: 0;padding: 0;color:#ecf8f4;}
 .jr .col2 .items-list{margin: 0;padding: 0;color:#282828;height: 200px;overflow: auto;}
-.jr .col2{color:#282828;}
 .jr .item,.jr .item-image,.jr .item-name,.jr .item-classe,.jr .item-description{display: inline-block;float:left}
 .jr .item{width: 120px; }
 .jr .item-image{width: 20px;}
