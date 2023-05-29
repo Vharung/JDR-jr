@@ -55,6 +55,7 @@
           "system": "jdrjr"
        }
     ],
+    "background": "systems/jdrjr/assets/accueil.jpg",
     "languages": [],
     "gridDistance": 1,
     "gridUnits": "m",
