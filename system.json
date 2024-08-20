@@ -2,13 +2,12 @@
     "id": "jdrjr",
     "title": "JDR Junior",
     "description": "The JDR Junior system for FoundryVTT !",
-    "version": "0.0.6",
+    "version": "0.1",
     "compatibility": {
-      "minimum": "10",
-      "verified": "11.299",
-      "maximum": "11"
+      "minimum": "12",
+      "verified": "12.331",
+      "maximum": "12.999"
     },
-    "templateVersion": 2,
     "authors": [
       {
         "name": "Vharung",
@@ -57,8 +56,10 @@
     ],
     "background": "systems/jdrjr/assets/accueil.jpg",
     "languages": [],
-    "gridDistance": 1,
-    "gridUnits": "m",
+    "grid":{
+      "distance":1,
+      "units":"m"
+    },
     "primaryTokenAttribute": "PV",
     "secondaryTokenAttribute": "PM",
     "url": "",

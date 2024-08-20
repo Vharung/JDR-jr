@@ -4,7 +4,7 @@
  */
  export class jdrjrActorSheet extends ActorSheet {
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
           classes: ["jdrjr", "sheet", "actor"],
           width: 1030, //defini la auteur et la largeurs de la fiche de perso
           height: 750,
@@ -100,28 +100,35 @@
     }
 
     //lancer de dés
-    _onRoll(event){
+    async _onRoll(event){
         let monJetDeDes = event.target.dataset["dice"];
         let nbdes = event.target.dataset["attdice"];
         const name = event.target.dataset["name"];
         const jetdeDesFormule = nbdes+"d6"; //formule du lancer
 
-        let r = new Roll(nbdes+"d6");
-        var roll=r.evaluate({"async": false});
+        let r = await new Roll(nbdes+"d6").evaluate();
+        console.log(r)
         var table=r.terms[0].results
-        var z=0;
+        console.log(table)
+        var total='';
+        let z='';
         for (var i = table.length - 1; i >= 0; i--) {
-            if(table[i].result>z){
-                z=table[i].result;
-            }
+                z =table[i].result;
+                console.log(z)
+                let color="#23221d";
+                if(z>=5){
+                    color="green"
+                }
+                total+='<span style="color: #fff;background:'+color+' ;padding:2px 5px;margin-left:3px">'+z+'</span>';        
         } 
-        var total=parseInt(z)
+        
         var succes=""; 
 
-        const texte = '<span style="font-size: 1.2em;">Jet de ' + name + ' : <span style="color: #fff;background: #23221d;padding:2px 5px;">' +total+'</span></span>' ;//+" - "+succes+" réussite(s)";
-        roll.toMessage({
-            speaker: ChatMessage.getSpeaker({ actor: this }),
-            flavor: texte
+        const texte = '<span style="font-size: 1.2em;">Jet de ' + name + ' : ' +total+'</span>' ;//+" - "+succes+" réussite(s)";
+        await r.toMessage({
+            user: game.user._id,
+            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+            content: texte
         });
     }
 }
