@@ -20,7 +20,7 @@
     "packs": [
         {
           "name": "faiblesse",
-          "label": "Faiblesse",
+          "label": "Faiblesse & Talent",
           "system": "jdrjr",
           "path": "./pack/faiblesse.db",
           "type": "Item"
@@ -41,10 +41,10 @@
         },
         {
           "name": "talent",
-          "label": "Talent",
+          "label": "Monstre",
           "system": "jdrjr",
           "path": "./pack/talent.db",
-          "type": "Item"
+          "type": "Actor"
         },
         {
           "label": "Régles",
